@@ -8,6 +8,30 @@ and open the template in the editor.
     Author     : Britt
 */
 
-* {
+*, .container, body, nav {
     background-color: #d2d3d3;
 }
+nav {
+     /*Add border above and below navigation items (not logo), only width of nav items*/
+     border-top: 4px solid #010101; 
+     border-bottom: 4px solid #010101; 
+     
+
+ }
+ .navbar {
+         margin: 1rem 1rem;
+         padding: 0;
+ }
+ .navbar-light .navbar-nav .nav-link {
+      font-family: 'Raleway', sans-serif;
+     font-size: 1.25em;
+     color: #010101;
+ }
+ .navbar-light .navbar-nav .nav-link:hover{
+     color:red;
+ }
+ a{
+    font-family: 'Raleway', sans-serif;
+     font-size: 1em;
+     color: #010101; 
+ }

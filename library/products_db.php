@@ -2,7 +2,7 @@
 
 function get_all_products(){
     global $db;
-    $query= 'SELECT * FROM Product';
+    $query= 'SELECT * FROM product';
     $statement=$db->prepare($query);
     $statement->execute();
     $products=$statement->fetchAll();
@@ -13,8 +13,8 @@ function get_all_products(){
 
 function get_product($productId){
     global $db;
-    $query= 'SELECT *FROM Product
-            WHERE productId = :productId';
+    $query= 'SELECT *FROM product
+            WHERE id = :productId';
     $statement= $db->prepare($query);
     $statement->bindValue(':productId', $productId );
     $statement->execute();
