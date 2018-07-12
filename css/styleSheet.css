@@ -23,15 +23,30 @@ nav {
          padding: 0;
  }
  .navbar-light .navbar-nav .nav-link {
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Playfair Display SC', serif;
      font-size: 1.25em;
      color: #010101;
  }
- .navbar-light .navbar-nav .nav-link:hover{
-     color:red;
+ .navbar-light .navbar-nav .nav-link:hover, a:hover{
+     color:#a08020;
  }
  a{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display SC', serif;
      font-size: 1em;
      color: #010101; 
  }
+ h2{
+     font-family: 'Playfair Display SC', serif;
+     color: #a08020;
+ }
+ p{
+     font-family: 'Raleway', sans-serif;
+ }
+ .btn-dark{
+     margin: 0.5rem;
+     color: #a08020;
+ }
+ .col-4{
+     margin-top: 1.5rem;
+ }
+ 

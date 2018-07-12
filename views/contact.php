@@ -15,7 +15,8 @@ include 'header.php';
                 <h1>Contact</h1>
                 <p>I would love to hear from you!</p>
 
-                <form method="post" action="contactform.php" id="contactform"> <!-- form to contact-->
+                <form method="post" action="/index.php" id="contactform"> <!-- form to contact-->
+                    <input id="action" name="action" type="hidden" value="contact">
                     <div class= "form-group">
                         <label class = "col-form-label" for="name">Name:</label>
                         <input type="text" name="name" class="form-control" id="name" required>

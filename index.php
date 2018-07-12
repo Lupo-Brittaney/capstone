@@ -5,6 +5,7 @@ require_once('library/products_db.php');
 
 //get action
 $action = filter_input(INPUT_POST, 'action', FILTER_SANITIZE_STRING);
+echo $action;
 
 //if no action show full game list
 if ($action ==NULL ){
@@ -12,6 +13,10 @@ if ($action ==NULL ){
     if($action==NULL){
         $action='list_all';
     }
+}
+$top_message=$_GET['message'];
+if (isset($top_message)){
+     echo "<script type='text/javascript'>s('$top_message');</script>";
 }
 //switch statments
 switch ($action){
@@ -21,6 +26,30 @@ switch ($action){
         include('views/all_products.php');    
         break;
     
+    case 'contact':
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $from = $email;
+        $to = 'blupo473@brittaneylupo.com';
+        $subject = "Message from colorado wild contact form";
+
+        $body = "From: $name\n E-Mail: $email\n Message: $message";
+        echo $body;
+        
+            if (mail ($to, $subject, $body)) {
+                $top_message = 'Your message has been sent!';
+                header( "Location: /index.php?message=$top_message" );
+                exit;
+            } else {
+                $top_message ='Something went wrong, please try again!';
+                header( "Location: /views/contact.php?message=$top_message" );
+                exit;
+            }
+        
+        break;
+    
+      
     case 'view_product':
         $productId= filter_input(INPUT_GET, 'productId', FILTER_SANITIZE_NUMBER_INT);
         if ($productId==NULL || $productId==FALSE){
@@ -37,10 +66,12 @@ switch ($action){
             $image_alt= $name.' image';
             include('views/product_view.php');
         }
-            
-            
-        
+  
         break;
+    
+        
+    
+        
     default :
         
         

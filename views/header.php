@@ -18,8 +18,12 @@
                            <li class ="nav-item"><a class="nav-link" href="/views/contact.php"> Contact</a></li>
                          </ul>
                     </div>
-                </nav>    
-            
+                </nav>  
+        <div class=" row justify-content-center ">
+            <div class =" col ">
+                <p class= "text-center" id="top_message"><?php echo $top_message; ?> </p>  
+            </div>
+        </div>
     </div>
 </header>
     

@@ -1,17 +1,5 @@
-<?php
-// start session
-session_start();
+      
 
-// page title name
-$page_title = "Contact";
-
-include 'head.php';
-       
-include 'header.php'; 
-                
-?>        
-        <main>
-            <h1>Contact</h1>
             <!-- get information from contact page, process it, send email and give confirmation or error message-->
                 <?php
                 $name = $_POST['name'];
@@ -19,22 +7,24 @@ include 'header.php';
                 $message = $_POST['message'];
                 $from = $email;
                 $to = 'blupo473@brittaneylupo.com';
+                $subject = "Message from colorado wild contact form";
 
 
 
                 $body = "From: $name\n E-Mail: $email\n Message: $message";
 
                 if ($_POST['submit'] ) {
-                  if (mail ($to, $body, $from)) {
-                  echo '<p>Your message has been sent!</p>';
+                  if (mail ($to, $subject, $body)) {
+                  $top_message = 'Your message has been sent!';
+                  include 'contact.php';
                 } else {
-                  echo '<p>Something went wrong, go back and try again!</p>';
+                  $top_message ='Something went wrong, go back and try again!';
+                  include 'contact.php';
                 }
                 }
                 ?>
         
 
             
-        </main>
-<?php include 'footer.php'; ?>
+
 
