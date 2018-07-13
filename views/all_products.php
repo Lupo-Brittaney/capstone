@@ -23,7 +23,7 @@ include 'views/header.php';
                                         </a>
                                     </div>
                                     <div class='col-3'>
-                                        <a href="views/add_cart.php?productId=<?php echo $product['id']; ?>" class="btn btn-dark">Buy</a>
+                                        <a href="./index.php?productId=<?php echo $product['id']; ?>&action=add_cart" class="btn btn-dark">Buy</a>
                                     </div>
                                 </div>
                            

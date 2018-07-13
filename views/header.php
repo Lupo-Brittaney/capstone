@@ -14,7 +14,7 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class=" navbar-nav ">
                            <li class ="nav-item"><a class="nav-link" href="/views/about.php"> About</a></li>
-                           <li class ="nav-item"><a class="nav-link" href="/views/cart.php"> Cart</a></li>
+                           <li class ="nav-item"><a class="nav-link" href="/views/addCustomerInfo.php"> Cart</a></li>
                            <li class ="nav-item"><a class="nav-link" href="/views/contact.php"> Contact</a></li>
                          </ul>
                     </div>

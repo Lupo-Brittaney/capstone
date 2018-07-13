@@ -20,7 +20,7 @@ include 'views/header.php';
                     <h2><?php echo $name; ?></h2>
                     <p><?php echo $description;?></p>
                     <p>$<?php echo $price;?></p>
-                    <a href="views/add_cart.php?productId=<?php echo $product['id']; ?>" class="btn btn-dark">Buy</a>
+                    <a href="./index.php?productId=<?php echo $product['id']; ?>&action=add_cart" class="btn btn-dark">Buy</a>
                 </div><!--product-box col-->
             </div><!--row-->
             
