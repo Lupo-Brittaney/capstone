@@ -11,3 +11,5 @@
         //include('error_database.php');
         echo $e->getMessage();
         exit();
+    }
+?>

@@ -1,4 +1,6 @@
 <?php
+// start session
+session_start();
 
 
 // page title name
