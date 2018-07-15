@@ -8,20 +8,24 @@ and open the template in the editor.
     Author     : Britt
 */
 
-*, .container, body, nav {
+.container, body, nav {
     background-color: #d2d3d3;
 }
-nav {
-     /*Add border above and below navigation items (not logo), only width of nav items*/
-     border-top: 4px solid #010101; 
-     border-bottom: 4px solid #010101; 
-     
 
- }
- .navbar {
-         margin: 1rem 1rem;
-         padding: 0;
- }
+.navbar-collapse {
+    /*Add border above and below navigation items (not logo), only width of nav items*/
+    border-top: 4px solid #010101; 
+    border-bottom: 4px solid #010101; 
+}  
+
+
+
+.navbar {
+    margin: 1rem 1rem;
+    padding: 0;
+    //  border-top: 4px solid #010101; 
+    // border-bottom: 4px solid #010101; 
+}
  .navbar-light .navbar-nav .nav-link {
       font-family: 'Playfair Display SC', serif;
      font-size: 1.25em;
@@ -35,11 +39,24 @@ nav {
      font-size: 1em;
      color: #010101; 
  }
+ h1{
+     font-family: 'Playfair Display SC', serif;
+     color: #010101;
+     text-align: center;
+ }
  h2{
      font-family: 'Playfair Display SC', serif;
      color: #a08020;
  }
- p{
+ h3{
+     font-family: 'Raleway', sans-serif;
+     font-size: 1.2rem;
+     font-weight: bold;
+ }
+ body{
+     font-family: 'Raleway', sans-serif;
+ }
+ td > a{
      font-family: 'Raleway', sans-serif;
  }
  .btn-dark{
@@ -49,4 +66,15 @@ nav {
  .col-4{
      margin-top: 1.5rem;
  }
- 
+
+ .navbar-light .navbar-toggler{
+     border: none;
+ }
+
+ .product-box{
+     margin-top:1rem;
+ }
+
+ .info-box{
+     border: solid 1px
+ }

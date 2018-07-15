@@ -1,7 +1,7 @@
      
 <!DOCTYPE html>
 <html lang="en">
-     <head>
+    <head>
         <meta charset="UTF-8"> 
         <title> <?php echo $page_title; ?> | Colorado Wild</title>
         <meta name ="author" content="Brittaney">
@@ -14,6 +14,6 @@
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     </head>
     <body>
-        
+
 
 
